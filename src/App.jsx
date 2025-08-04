@@ -43,22 +43,6 @@ function App() {
           element: <Contact />,
           action: contactData
         },
-        // Test error routes
-        {
-          path: "/test-500",
-          element: <div>Testing 500 Error</div>,
-          loader: () => { throw new Response("Internal Server Error", { status: 500 }); }
-        },
-        {
-          path: "/test-401",
-          element: <div>Testing 401 Error</div>,
-          loader: () => { throw new Response("Unauthorized", { status: 401 }); }
-        },
-        {
-          path: "/test-404",
-          element: <div>Testing 404 Error</div>,
-          loader: () => { throw new Response("Not Found", { status: 404 }); }
-        }
       ]
     }
 
