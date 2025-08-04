@@ -1,0 +1,68 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+}
+
+.card-image-wrapper {
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px 12px 0 0;
+}
+
+.card-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image {
+    height: 180px;
+  }
+}
+
+.card-footer {
+  background-color: #222;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.watch-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0.75rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+  background-color: #444;
+}
